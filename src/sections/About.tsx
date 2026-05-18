@@ -1,7 +1,7 @@
-import { motion } from 'framer-motion';
-import { Download, Code, Shield, Zap, Database } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { FadeIn } from '@/components/animations/FadeIn';
+import { motion } from "framer-motion";
+import { Download, Code, Shield, Zap, Database } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { FadeIn } from "@/components/animations/FadeIn";
 
 /**
  * Key strengths data
@@ -9,23 +9,25 @@ import { FadeIn } from '@/components/animations/FadeIn';
 const strengths = [
   {
     icon: Code,
-    title: 'Clean Code',
-    description: 'Writing maintainable, well-documented code following best practices',
+    title: "Clean Code",
+    description:
+      "Writing maintainable, well-documented code following best practices",
   },
   {
     icon: Shield,
-    title: 'Secure APIs',
-    description: 'Implementing robust authentication and authorization mechanisms',
+    title: "Secure APIs",
+    description:
+      "Implementing robust authentication and authorization mechanisms",
   },
   {
     icon: Zap,
-    title: 'High Performance',
-    description: 'Optimizing applications for speed and scalability',
+    title: "High Performance",
+    description: "Optimizing applications for speed and scalability",
   },
   {
     icon: Database,
-    title: 'Database Design',
-    description: 'Architecting efficient database schemas and queries',
+    title: "Database Design",
+    description: "Architecting efficient database schemas and queries",
   },
 ];
 
@@ -56,21 +58,28 @@ export function About() {
           <FadeIn delay={0.1}>
             <div className="space-y-6">
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                I&apos;m a <strong className="text-foreground">MERN Stack Developer</strong> with{' '}
-                <strong className="text-foreground">3 years of experience</strong> building
-                high-performance backend systems and scalable Admin Panels for diverse
-                industries including Fintech, Ride-booking, Betting platforms, and NFC-Card
-                Management systems.
+                I&apos;m a{" "}
+                <strong className="text-foreground">
+                  MERN Stack Developer
+                </strong>{" "}
+                with{" "}
+                <strong className="text-foreground">
+                  3 years of experience
+                </strong>{" "}
+                building high-performance backend systems and scalable Admin
+                Panels for diverse industries including Fintech, Ride-booking,
+                Betting platforms, and NFC-Card Management systems.
               </p>
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                My expertise lies in architecting secure APIs, implementing real-time data
-                processing, and creating user-centric interfaces. I have a proven track record
-                of solving complex technical challenges and delivering robust, end-to-end
-                digital solutions.
+                My expertise lies in architecting secure APIs, implementing
+                real-time data processing, and creating user-centric interfaces.
+                I have a proven track record of solving complex technical
+                challenges and delivering robust, end-to-end digital solutions.
               </p>
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                I&apos;m passionate about writing clean, maintainable code and constantly
-                learning new technologies to stay at the forefront of web development.
+                I&apos;m passionate about writing clean, maintainable code and
+                constantly learning new technologies to stay at the forefront of
+                web development.
               </p>
 
               {/* Download Resume Button */}

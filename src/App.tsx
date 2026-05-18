@@ -7,6 +7,7 @@ import { Projects } from "@/sections/Projects";
 import { Contact } from "@/sections/Contact";
 import { Footer } from "@/sections/Footer";
 import "./App.css";
+import CoreExpertise from "./sections/Coreexpertise";
 
 /**
  * Main App Component
@@ -37,6 +38,9 @@ function App() {
 
         {/* About Section */}
         <About />
+
+        {/* Core Expertise Section */}
+        <CoreExpertise />
 
         {/* Experience & Education Section */}
         <Experience />

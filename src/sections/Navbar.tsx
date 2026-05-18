@@ -9,9 +9,10 @@ import { useActiveSection } from "@/hooks/useActiveSection";
 const navItems = [
   { label: "Home", href: "home" },
   { label: "About", href: "about" },
+  { label: "Expertise", href: "core-expertise" },
   { label: "Experience", href: "experience" },
-  { label: "Projects", href: "projects" },
   { label: "Skills", href: "skills" },
+  { label: "Projects", href: "projects" },
   { label: "Contact", href: "contact" },
 ];
 
@@ -61,8 +62,8 @@ export function Navbar() {
         transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-white/90 backdrop-blur-md shadow-sm"
-            : "bg-transparent"
+            ? "bg-white/95 backdrop-blur-md shadow-md"
+            : "bg-white/80 backdrop-blur-sm shadow-sm"
         }`}
       >
         <nav
