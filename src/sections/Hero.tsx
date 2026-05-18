@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import { Github, Linkedin, Mail, Code2, Zap, ArrowDown } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import gsap from "gsap";
 
 /**
@@ -241,13 +240,17 @@ export function Hero() {
   }, []);
 
   // ── Magnetic Buttons ──
-  const makeMagnetic = (ref: React.RefObject<HTMLButtonElement>) => ({
+  const makeMagnetic = (ref: React.RefObject<HTMLButtonElement | null>) => ({
     onMouseMove: (e: React.MouseEvent<HTMLButtonElement>) => {
       const btn = ref.current;
+
       if (!btn) return;
+
       const rect = btn.getBoundingClientRect();
+
       const x = e.clientX - rect.left - rect.width / 2;
       const y = e.clientY - rect.top - rect.height / 2;
+
       gsap.to(btn, {
         x: x * 0.3,
         y: y * 0.3,
@@ -255,7 +258,10 @@ export function Hero() {
         ease: "power2.out",
       });
     },
+
     onMouseLeave: () => {
+      if (!ref.current) return;
+
       gsap.to(ref.current, {
         x: 0,
         y: 0,
